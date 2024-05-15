@@ -52,6 +52,7 @@ export function SignMessage() {
         id="message"
         name="message"
         placeholder="Enter message to sign"
+        style={{ width: "100%", height: "100px" }}
       />
       <br />
       <button className={styles.button} type="submit">
