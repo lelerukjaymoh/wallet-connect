@@ -2,7 +2,7 @@
 
 import { defaultWagmiConfig } from "@web3modal/wagmi/react/config";
 
-import { cookieStorage, createStorage } from "wagmi";
+import { cookieStorage, createStorage, http } from "wagmi";
 import { mainnet, sepolia } from "wagmi/chains";
 
 // Your WalletConnect Cloud project ID
@@ -27,5 +27,5 @@ export const config = defaultWagmiConfig({
   storage: createStorage({
     storage: cookieStorage,
   }),
-  enableEmail: true, // Optional - false by default
+  enableEmail: true,
 });
